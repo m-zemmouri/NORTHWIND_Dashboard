@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="utf-8">
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-table.min.css" rel="stylesheet" />
+    <!-- JS -->
+    <script src="assets/js/base.bundle.js"></script>
+    <script src="assets/js/bootstrap-table.bundle.js"></script>
+    <script src="assets/js/highcharts.bundle.js"></script>
+    <script src="assets/js/zemmourilibrary.js"></script>
+    <script src="assets/js/zemmourilibrary-northwind.js"></script>
+    <script src="assets/js/locale/Northwind-ar.js"></script>
+    <script src="assets/js/locale/Northwind-en.js"></script>
+    <script src="assets/js/locale/Northwind-fr.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class='page-header lang-entry'>Order Detail</h1>
+        <div id="toolbar">
+        </div>
+        <table id="Order_Detail_table"
+               data-toggle="table"
+               data-locale="fr-FR"
+               data-show-columns="true"
+               data-search="true"
+               data-pagination="true"
+               data-show-pagination-switch="true"
+               data-show-toggle="true"
+               data-show-export="true"
+               data-toolbar="#toolbar"
+               data-advanced-search="true"
+               data-id-table="advancedTable"
+               data-show-multi-sort="true"
+               data-sort-priority='[{"sortName": "Date","sortOrder":"Asc"}]'>
+            <thead>
+                <tr>
+                    <th data-field='Order ID' data-visible='false' data-align='right' class='lang-entry'>Order ID</th>
+                    <th data-field='Employe' data-visible='false' data-sortable='true' class='lang-entry'>Employe</th>
+                    <th data-field='Customer' data-visible='false' class='lang-entry'>Customer</th>
+
+
+
+                    <th data-field='Order Date' data-sortable='true' data-searchable='true' data-align='right' class='lang-entry'>Order Date</th>
+
+
+                    <th data-field='Category' data-sortable='true' data-searchable='true' class='lang-entry'>Category</th>
+                    <th data-field='Product ID' data-visible='false' data-align='right' class='lang-entry'>Product ID</th>
+                    <th data-field='Product' data-sortable='true' data-searchable='true' class='lang-entry'>Product</th>
+                    <th data-field='Supplier' data-sortable='true' data-searchable='true' class='lang-entry'>Supplier</th>
+
+
+                    <th data-field='Unit Price' data-sortable='true' data-searchable='true' data-align='right' class='lang-entry'>Unit Price</th>
+                    <th data-field='Quantity' data-sortable='true' data-searchable='true' data-align='right' class='lang-entry'>Quantity</th>
+                    <th data-field='Discount' data-visible='false' data-sortable='true' data-searchable='true' data-align='right' class='lang-entry'>Discount</th>
+                    <th data-field='Price' data-visible='false' data-searchable='true' data-align='right' class='lang-entry'>Price</th>
+                    <th data-field='Discount Price' data-align='right' class='lang-entry'>Discount Price</th>
+                    <th data-field='Extended Price' data-sortable='true' data-searchable='true' data-align='right' class='lang-entry'>Extended Price</th>  
+                  </tr>
+            </thead>
+        </table>
+    </div>
+
+    <footer class="footer"><div class="container"><p class="text-muted lang-entry">PowredBy</p></div></footer>
+    
+</body>
+</html>
+<script>
+    Order_Detail_Data();
+</script>

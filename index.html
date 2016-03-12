@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="utf-8">
+    <!-- CSS -->
+    <link href="assets/css/index.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- JS -->
+    <script src="assets/js/base.bundle.js"></script>
+    <script src="assets/js/bootstrap-table.bundle.js"></script>
+    <script src="assets/js/highcharts.bundle.js"></script>
+    <script src="assets/js/zemmourilibrary.js"></script>
+    <script src="assets/js/zemmourilibrary-northwind.js"></script>
+    <script src="assets/js/locale/Northwind-ar.js"></script>
+    <script src="assets/js/locale/Northwind-en.js"></script>
+    <script src="assets/js/locale/Northwind-fr.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Static navbar -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle lang-entry">Stock&nbsp;<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a target="content" href="Stock_Data.html" class='lang-entry'><i class="fa fa-table"></i>&nbsp;Data</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle lang-entry">Order&nbsp;<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a target="content" href="Order_Data.html" class='lang-entry'><i class="fa fa-table"></i>&nbsp;Data</a></li>
+                                <li><a target="content" href="CA_Annuel.html" class='lang-entry'>CA Annuel</a></li>
+                                <li><a target="content" href="CA_Cumule.html" class='lang-entry'>CA Cumule</a></li>
+                                <li><a target="content" href="CA_Commercial.html" class='lang-entry'>CA Commercial</a></li>
+                                <li><a target="content" href="CA_Client.html" class='lang-entry'>CA Client</a></li>
+                                <li><a target="content" href="CA_Article.html" class='lang-entry'>CA Article</a></li>
+                                <li><a target="content" href="CA_Category.html" class='lang-entry'>CA Category</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle lang-entry">Order Detail&nbsp;<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a target="content" href="Order_Detail_Data.html" class='lang-entry'><i class="fa fa-table"></i>&nbsp;Data</a></li>
+                                <li><a target="content" href="Benefice_Annuel.html" class='lang-entry'>Benefice Annuel</a></li>
+                                <li><a target="content" href="Benefice_Cumule.html" class='lang-entry'>Benefice Cumule</a></li>
+                                <li><a target="content" href="Benefice_Commercial.html" class='lang-entry'>Benefice Commercial</a></li>
+                                <li><a target="content" href="Benefice_Client.html" class='lang-entry'>Benefice Client</a></li>
+                                <li><a target="content" href="Benefice_Article.html" class='lang-entry'>Benefice Article</a></li>
+                                <li><a target="content" href="Benefice_Category.html" class='lang-entry'>Benefice Category</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle lang-entry">Debt&nbsp;<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a target="content" href="Creance_Cumule.html" class='lang-entry'>Creance Cumule</a></li>
+                                <li><a target="content" href="Creance_Client.html" class='lang-entry'>Creance Client</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-globe"></i>&nbsp;<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="javascript:changeLang('ar');"><i class="fa fa-flag-o"></i>&nbsp;عربية</a>                                </li>
+                                <li><a href="javascript:changeLang('en');"><i class="fa fa-flag"></i>&nbsp;English</a></li>
+                                <li><a href="javascript:changeLang('fr');"><i class="fa fa-flag"></i>&nbsp;Français</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-user"></i>&nbsp;<i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <a href="#" class='lang-entry'><i class="fa fa-user"></i>&nbsp;User Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#" class='lang-entry'><i class="fa fa-gear"></i>&nbsp;Settings</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="login.html" class='lang-entry'><i class="fa fa-sign-out"></i>&nbsp;Logout</a>
+                                </li>
+                            </ul>
+                            <!-- /.dropdown-user -->
+                        </li>
+                        <li><a target="content" href="about.html"><i class="fa fa-info-circle"></i></a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </div>
+
+    </div> <!-- /container -->
+
+
+    <div class="ribbon">
+        <a href="#" target="_blank"><i class="fa fa-github"></i>&nbsp;View Source on GitHub</a>
+    </div>
+    <div class="content">
+        <iframe name="content" width="100%" height="100%" src="Order_Detail_Data.html"></iframe>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript">
+    index_Ready();
+</script>
